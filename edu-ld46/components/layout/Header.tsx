@@ -1,7 +1,10 @@
 "use client";
 
 import Link from 'next/link';
-import Image from 'next/image'
+import Image from 'next/image';
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 export default function Header() {
 
@@ -36,7 +39,23 @@ export default function Header() {
                     </ul>
                 </div>
                 <div className="wrapper">
-
+                    <ul className="flex items-center justify-end space-x-3">
+                        <li className="border border-pink-400 w-[46px] h-[46px] border-dashed rounded-full flex items-center justify-center">
+                            <div className="bg-pink-400 w-10 h-10 rounded-full flex items-center justify-center">
+                                <SearchIcon sx={{ color: '#ffffff', fontSize: 22}} />
+                            </div>
+                        </li>
+                        <li className="border border-orange-400 w-[46px] h-[46px] border-dashed rounded-full flex items-center justify-center">
+                            <div className="bg-orange-400 w-10 h-10 rounded-full flex items-center justify-center">
+                                <ShoppingCartIcon sx={{ color: '#ffffff', fontSize: 22}} />
+                            </div>
+                        </li>
+                        <li className="border border-blue-400 w-[46px] h-[46px] border-dashed rounded-full flex items-center justify-center">
+                            <div className="bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center">
+                                <AccountCircleIcon sx={{ color: '#ffffff', fontSize: 22}} />
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
